@@ -2,14 +2,12 @@
 
 @model WAD2_Website.Models.UserModel
 @{
-    Layout = null;
+    Layout = "../Shared/_LayoutUserForm.cshtml";
     ViewBag.Title = "User Data";
 }
-<head>
-    <link rel="stylesheet" href="~/Content/UserForm.css"/>
-</head>
+
 @{Html.BeginForm(); }
-<form id="i" method="post">
+<form method="post">
     <div asp-validation-summary="All"> </div>
 
     @Html.AntiForgeryToken()
