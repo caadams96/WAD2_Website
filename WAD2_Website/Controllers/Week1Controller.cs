@@ -1,4 +1,6 @@
 ﻿using System.Web.Mvc;
+using WAD2_Website.Models;
+
 
 namespace WAD2_Website.Controllers
 {
@@ -7,7 +9,14 @@ namespace WAD2_Website.Controllers
         // GET
         public ActionResult Index()
         {
-            return View();
+            var m = new UserModel
+            {
+                UserId = 1,
+                UserFirstName = "Corey",
+                UserLastName = "Adams",
+                Password = "password123"
+            };
+            return View(m);
         }
     }
 }
