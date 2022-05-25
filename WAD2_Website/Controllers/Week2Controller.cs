@@ -21,6 +21,7 @@ namespace WAD2_Website.Controllers
                 ViewBag.Password = model.Password;
 
             }
+            
             return View(model);
 
         }

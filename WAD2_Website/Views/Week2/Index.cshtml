@@ -14,64 +14,50 @@
         <h1>User Form</h1>
     </div>
     <h2>User Data Submission</h2>
-    <div>
-        @Html.LabelFor(model => model.UserId, "UserID", new { @class = "control-label" })
-        @Html.TextBoxFor(model => model.UserId, new { @class = "form-control" })
-        
-        <div class="warning"> 
-            @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+    <div class="input-wrapper">
+        <div class="item">
+            <div>@Html.LabelFor(model => model.UserId, "UserID", new { @class = "control-label" })</div>
+            <div>@Html.TextBoxFor(model => model.UserId, new { @class = "form-control" })</div>
+            <div class="warning">
+                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+            </div>
         </div>
-    </div>
-    <div>
-        @Html.LabelFor(model => model.UserFirstName, "First Name", new { @class = "control-label" })
-        @Html.TextBoxFor(model => model.UserFirstName, new { @class = "form-control" })
-        <div class="warning"> 
-            @Html.ValidationMessageFor(model => model.UserFirstName, "", new { @class = "text-danger" })
-        </div>
+        <div class="item">
+            @Html.LabelFor(model => model.UserFirstName, "First Name", new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.UserFirstName, new { @class = "form-control" })
+            <div class="warning"> 
+                @Html.ValidationMessageFor(model => model.UserFirstName, "", new { @class = "text-danger" })
+            </div>
 
-    </div>
-    <div>
-        @Html.LabelFor(model => model.UserLastName, "Last Name", new { @class = "control-label" })
-        @Html.TextBoxFor(model => model.UserLastName, new { @class = "form-control" })
-        <div class="warning"> 
-            @Html.ValidationMessageFor(model => model.UserLastName, "", new { @class = "text-danger" })
         </div>
+        <div class="item">
+            @Html.LabelFor(model => model.UserLastName, "Last Name", new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.UserLastName, new { @class = "form-control" })
+            <div class="warning"> 
+                @Html.ValidationMessageFor(model => model.UserLastName, "", new { @class = "text-danger" })
+            </div>
 
-    </div>
-    <div>
-        @Html.LabelFor(model => model.Password, "Password", new { @class = "control-label" })
-        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
-        <div class="warning">
-            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+        </div>
+        <div class="item">
+            @Html.LabelFor(model => model.Password, "Password", new { @class = "control-label" })
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+            <div class="warning">
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })</div>
         </div>
     </div>
+            <div class="output-wrapper">
+                <div id="userid" class="user-property">@ViewBag.UserID</div>
+                <div id="fname" class="user-property">@ViewBag.FirstName</div>
+                <div id="lname" class="user-property">@ViewBag.LastName</div>
+                <div id="pwd" class="user-property">@ViewBag.Password</div>
+            </div>
     <div class="buttons">
-        <button type="submit">Submit</button>
-        <br/><br/>
-        <button type="button">@Html.ActionLink("Clear", "Index") </button>
+        <button class="btn btn-success" type="submit">Submit</button>
+        @Html.ActionLink("Clear", "Index",null, new {@id="button-clear", @class = "btn btn-danger" } )
     </div>
     <hr />
-    
-   
-    <div class="data">
-         <h2>User Data</h2>
-        <div>
-            <label> User ID: </label>
-            <input value="@ViewBag.UserID" readonly/>
-        </div>
-        <div>
-            <label> First Name: </label>
-            <input value="@ViewBag.FirstName" readonly/>
-        </div>
-        <div>
-            <label> Last Name: </label>
-            <input value="@ViewBag.LastName" readonly/>
-        </div>
-        <div>
-            <label> Password: </label>
-            <input value="@ViewBag.Password" readonly/>
-        </div>
-    </div>
+
+  
     <hr />
 
 </form>

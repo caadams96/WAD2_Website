@@ -24,4 +24,3 @@ select,
 textarea {
     max-width: 280px;
 }
-tbody::after{font-size:100px;}

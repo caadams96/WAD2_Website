@@ -6,14 +6,13 @@ body{
 .banner{
     height: 65px;
     padding: 5px;
-    background-color: palevioletred;
+    background-color: white;
     border-style: solid;
-    border-color: lightsalmon;
+    border-color: black;
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
     max-width: 80%;
-    color: white;
 
 }
 h1 {
@@ -23,33 +22,90 @@ h1 {
 h2{
     font-size: xx-large;  
 }
-label {
-    padding-left: 25px;
-    display: inline-block;
-    width: 10em;
-    font-size: 25px;
+
+/*label {*/
+/*    padding-left: 25px;*/
+/*    display: inline-block;*/
+/*    width: 10em;*/
+/*    font-size: 25px;*/
 
 
-}
+/*}
+
+ */
 .form-control {
    
-    display: inline-block;
-    width: 16em;
+    display: block;
+    width: 15em;
    
 }
-button{
-    margin-left: 25px;
-    width: 10em;
-    height: 2em;
+.input-wrapper{
+    display:block;
+    clear: both;
+    margin: 0 0 1em 0;
+    overflow: auto;
+}
+.item{
+    display: inline;
+    float:left;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 form{
-    background-color: burlywood;
-    width: 100%;
+    background-color: lightgrey;
+    
 }
 .warning{
     padding-top:10px;
-    padding-left: 25px;
     display: inline-block;
     color: red;
-    font-size: 20px;
+    font-size: 15px;
 }
+.output-wrapper{
+    display:block;
+    clear: both;
+    margin: 0 0 1em 0;
+    overflow: auto;
+}
+
+.user-property{
+    border-radius: 0.5em;
+    border: 2px solid black;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 1em;
+    display: inline;
+    float:left;
+    margin-right: 1em;
+    padding-top: 13px;
+    text-align: center;    
+}
+.user-property:hover{
+    border: 2px solid yellow;
+}
+#userid{background-color: palegoldenrod;}
+#fname{background-color: paleturquoise;}
+#lname{background-color: palevioletred;}
+#pwd{background-color: palegreen; }
+
+button,input[type=submit],input[type=button]{
+   border-radius: 0.5em;
+    cursor: pointer;
+    padding: 12px 30px 12px 30px;
+    background-color: #E4E4E4;
+    color: black;
+    border: 1px solid black;
+    height: 36px;
+}
+.button-submit{
+    background-color: green;
+    color: white;
+
+}
+.button-submit:hover{
+    background-color: darkgreen;
+    color: white;
+
+}
+
+.buttons{ width:59px; display: inline}
