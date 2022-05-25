@@ -138,8 +138,13 @@
         <Content Include="Content\Site.css" />
         <Content Include="Scripts\bootstrap.js" />
         <Content Include="Scripts\bootstrap.min.js" />
-        <Content Include="Scripts\jquery-3.3.1.js" />
-        <Content Include="Scripts\jquery-3.3.1.min.js" />
+        <Content Include="Scripts\jquery-3.6.0-vsdoc.js" />
+        <Content Include="Scripts\jquery-3.6.0.js" />
+        <Content Include="Scripts\jquery-3.6.0.min.js" />
+        <Content Include="Scripts\jquery-3.6.0.min.map" />
+        <Content Include="Scripts\jquery-3.6.0.slim.js" />
+        <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+        <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
         <Content Include="Scripts\modernizr-2.8.3.js" />
         <Content Include="Views\Home\Applications.cshtml" />
         <Content Include="Views\Shared\_LayoutUserForm.cshtml" />
@@ -172,7 +177,6 @@
         <Content Include="Content\bootstrap-theme.min.css.map" />
         <Content Include="Content\bootstrap-theme.css.map" />
         <None Include="packages.config" />
-        <Content Include="Scripts\jquery-3.3.1.min.map" />
     </ItemGroup>
     <PropertyGroup>
         <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
