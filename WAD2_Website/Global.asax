@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="WAD2_Website.MvcApplication" Language="C#" %>
